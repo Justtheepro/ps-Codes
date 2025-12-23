@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta property="og:title" content="JUSTTHEEPRO | Web Designer & Web3 Expert">
+<meta property="og:description" content="Portfolio of Enyinnaya Nwala Prosper - Certified Web Designer and Creator.">
+<meta property="og:image" content="https://justtheepro.vercel.app/image/mypfp.jpg"> <meta property="og:url" content="https://justtheepro.vercel.app/">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="image/mypfp.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - JUSTTHEEPRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+    <nav class="w-full flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
+        <a href="index.html" class="flex items-center gap-4 group">
+            <img src="image/mypfp.jpg" alt="JTP" class="w-10 h-10 rounded-full border-2 border-white/20 object-cover group-hover:border-white/60 transition-colors">
+            <span class="text-xl font-bold tracking-wide text-white group-hover:text-gray-300 transition-colors">JUSTTHEEPRO</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+            <a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
+            <a href="about.html" class="text-white border-b-2 border-white pb-1">About</a>
+            <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+        </div>
+
+        <button id="open-menu-btn" class="md:hidden text-white hover:text-gray-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+    
+    <div id="menu-backdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
+
+    <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-[80%] max-w-[320px] h-full bg-black text-white-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+        
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100">
+            <h2 class="text-xl font-bold text-black-900">Menu</h2>
+            <button id="close-menu-btn" class="text-gray-500 hover:text-white-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col px-4 py-6 gap-2">
+            <a href="index.html" class="block px-4 py-3 bg-gray-100 text-gray-800 font-semibold rounded-lg">
+                Home
+            </a>
+            <a href="about.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                About
+            </a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                Contact
+            </a>
+            <a href="portfolio.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                Portfolio
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+
+    <main class="flex-grow px-6 md:px-12 py-12 md:py-20 max-w-7xl mx-auto w-full">
+        
+        <div class="mb-16">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-500 text-transparent bg-clip-text">
+                THE STORY
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl font-light leading-relaxed">
+                I am <span class="text-white font-medium">NWALA PROSPER ENYINNAYA</span>, also known as <span class="text-white font-medium">JUSTTHEEPRO</span>. A multi-disciplinary creator, blending code, design and financial strategy.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4 border-l-4 border-white pl-4">The Journey</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        My journey isn't a straight line. It started with a curiosity for how things work on the web, which led me to become a <strong>Certified Web Designer</strong>. But I didn't stop at code.
+                        <br><br>
+                        I realized that functionality needs beauty, so I mastered <strong>Visual Identity & Graphics</strong> to help businesses look as good as they perform.
+                    </p>
+                </div>
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4 border-l-4 border-purple-500 pl-4">The Web3 Pivot</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        The world is moving decentralized. I dove deep into the <strong>Web3 ecosystem</strong>, not just as a developer but as an active market participant.
+                        <br><br>
+                        My experience in <strong>Futures & On-Chain Trading</strong> gives me a unique edge, I understand the tech <em>and</em> the market psychology behind it.
+                    </p>
+                </div>
+
+                <div class="pt-6">
+                    <p class="italic text-gray-500">"I don't just build tools; I use them. I don't just watch markets; I trade them."</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-[#0a0a0a] p-6 rounded-xl border border-white/10 hover:border-yellow-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-yellow-900/20 rounded-lg flex items-center justify-center mb-4 text-yellow-500 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Visual Design</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Canva Expert</li>
+                        <li>• Brand Identity</li>
+                        <li>• Social Media Banners</li>
+                        <li>• UI/UX Layouts</li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#0a0a0a] p-6 rounded-xl border border-white/10 hover:border-blue-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-blue-900/20 rounded-lg flex items-center justify-center mb-4 text-blue-500 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Web Development</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• HTML5 / CSS3</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Responsive Design</li>
+                        <li>• Performance Tuning</li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2 bg-[#0a0a0a] p-6 rounded-xl border border-white/10 hover:border-green-500/50 transition-colors group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-900/20 rounded-lg flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold bg-green-900/30 text-green-400 px-2 py-1 rounded">Active</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Market Analysis & Trading</h3>
+                    <p class="text-gray-400 text-sm mb-3">
+                        Specialized in high-risk/high-reward environments. I analyze on-chain data and technical charts to spot opportunities.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-xs border border-white/20 px-2 py-1 rounded text-gray-300">Futures</span>
+                        <span class="text-xs border border-white/20 px-2 py-1 rounded text-gray-300">DeFi</span>
+                        <span class="text-xs border border-white/20 px-2 py-1 rounded text-gray-300">Degen</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-auto py-8 text-center border-t border-white/10 text-gray-500 text-sm">
+        &copy; 2025 JUSTTHEEPRO. All rights reserved.
+    </footer>
+
+
+ <button 
+    id="scrollTopBtn" 
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-8 right-8 z-50 hidden bg-white text-black p-4 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300 hover:-translate-y-1"
+    aria-label="Scroll to top"
+>
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>

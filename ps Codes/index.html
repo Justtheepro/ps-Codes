@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta property="og:title" content="JUSTTHEEPRO | Web Designer & Web3 Expert">
+<meta property="og:description" content="Portfolio of Enyinnaya Nwala Prosper - Certified Web Designer and Creator.">
+<meta property="og:image" content="https://justtheepro.vercel.app/image/mypfp.jpg"> <meta property="og:url" content="https://justtheepro.vercel.app/">
+    <link rel="icon" type="image/x-icon" href="image/mypfp.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTTHEEPRO - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+         body { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-black text-white h-screen flex flex-col overflow-x-hidden">
+
+    <nav class="w-full flex justify-between items-center px-6 py-6 bg-transparent absolute top-0 left-0 z-40">
+        
+        <div class="flex items-center gap-4">
+           <img 
+               src="image/mypfp.jpg" 
+               alt="JTP" 
+               class="w-12 h-12 rounded-full border-2 border-white/20 object-cover"
+>
+            <span class="text-xl font-medium tracking-wide drop-shadow-md">JUSTTHEEPRO</span>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button class="text-white hover:text-gray-300 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+
+            <button id="open-menu-btn" class="md:hidden text-white hover:text-gray-300 focus:outline-none ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            
+            <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide ml-4">
+                <li><a href="#" class="border-b-2 border-white pb-1">Home</a></li>
+                <li><a href="portfolio.html" class="text-gray-300 hover:text-white">Portfolio</a></li>
+                <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+                <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="menu-backdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
+
+    <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-[80%] max-w-[320px] h-full bg-black text-white-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+        
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-100">
+            <h2 class="text-xl font-bold text-black-900">Menu</h2>
+            <button id="close-menu-btn" class="text-gray-500 hover:text-white-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col px-4 py-6 gap-2">
+            <a href="index.html" class="block px-4 py-3 bg-gray-100 text-gray-800 font-semibold rounded-lg">
+                Home
+            </a>
+            <a href="about.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                About
+            </a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                Contact
+            </a>
+            <a href="portfolio.html" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50 hover:text-gray-900 rounded-lg transition">
+                Portfolio
+            </a>
+        </div>
+
+
+    </div>
+
+    <main class="relative w-full flex-grow flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="image/download (1).jfif" 
+                alt="destop background" 
+                class="w-full h-full object-cover opacity-60"
+            >
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 mt-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight bg-gradient-to-br from-white via-gray-300 to-gray-500 text-transparent bg-clip-text drop-shadow-lg">
+             JUSTTHEEPRO | THE CREATOR
+             </h1>
+            <p class="text-lg md:text-2xl font-light text-gray-200 tracking-wide drop-shadow-md">
+                Certified web designer <span class="mx-1 text-gray-400">|</span> Web3 Expertise <span class="mx-1 text-gray-400">|</span> Tech-savvy
+            </p>
+        </div>
+    </main>
+
+    
+        
+<button 
+    id="scrollTopBtn" 
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-8 right-8 z-50 hidden bg-white text-black p-4 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300 hover:-translate-y-1"
+    aria-label="Scroll to top"
+>
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>

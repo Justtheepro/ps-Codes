@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="image/mypfp.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - JUSTTHEEPRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        /* Remove default arrow from select input */
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+    <nav class="w-full flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/10">
+        <a href="index.html" class="flex items-center gap-4 group">
+            <img src="image/mypfp.jpg" alt="JTP" class="w-10 h-10 rounded-full border-2 border-white/20 object-cover group-hover:border-white/60 transition-colors">
+            <span class="text-xl font-bold tracking-wide text-white group-hover:text-gray-300 transition-colors">JUSTTHEEPRO</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+            <a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
+            <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a>
+            <a href="contact.html" class="text-white border-b-2 border-white pb-1">Contact</a>
+        </div>
+
+        <button id="open-menu-btn" class="md:hidden text-white hover:text-gray-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <div id="menu-backdrop" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0"></div>
+
+    <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-[80%] max-w-[320px] h-full bg-black text-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+        
+        <div class="flex items-center justify-between px-6 py-5 border-b border-gray-800">
+            <h2 class="text-xl font-bold">Menu</h2>
+            <button id="close-menu-btn" class="text-gray-500 hover:text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col px-4 py-6 gap-2">
+            <a href="index.html" class="block px-4 py-3 text-gray-400 font-medium hover:bg-gray-900 hover:text-white rounded-lg transition">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-400 font-medium hover:bg-gray-900 hover:text-white rounded-lg transition">About</a>
+            <a href="portfolio.html" class="block px-4 py-3 text-gray-400 font-medium hover:bg-gray-900 hover:text-white rounded-lg transition">Portfolio</a>
+            <a href="contact.html" class="block px-4 py-3 bg-white text-black font-semibold rounded-lg">Contact</a>
+        </div>
+    </div>
+
+    <main class="flex-grow px-6 md:px-12 py-12 md:py-20 max-w-7xl mx-auto w-full">
+        
+        <div class="mb-16 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 uppercase">
+                Let's <span class="bg-gradient-to-r from-white via-gray-200 to-gray-500 text-transparent bg-clip-text">Build</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl font-light leading-relaxed">
+              You have a project in mind? Whether it's a Web platform, a brand identity, or a trading collaboration, I'm ready to talk.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+            
+            <div class="space-y-12">
+                
+                <div class="group">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">Email Me</h3>
+                    <a href="mailto:nwalaprosperenyinnaya@gmail.com" class="text-2xl md:text-3xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                        nwalaprosperenyinnaya@gmail.com
+                    </a>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Connect</h3>
+                    <div class="flex flex-col gap-4">
+                        <a href="https://x.com/JUSTTHEEPRO" class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all group">
+                            <div class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-white group-hover:text-gray-300">Twitter / X</span>
+                                <span class="text-xs text-gray-500">@JUSTTHEEPRO</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/JUSTTHEEPRO" class="flex items-center gap-4 p-4 rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all group">
+                            <div class="w-10 h-10 rounded-full bg-[#0077b5] text-white flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-white group-hover:text-gray-300">LinkedIn</span>
+                                <span class="text-xs text-gray-500">@JUSTTHEEPRO</span>
+                            </div>
+                        </a>
+
+
+                       <a href="https://wa.me/2348085442966" class="group flex items-center p-4 rounded-2xl border border-neutral-800 bg-black hover:bg-neutral-900 transition-all duration-200">
+                     <div class="flex-shrink-0 w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center text-white mr-4">
+                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                     <path fill-rule="evenodd" d="M12 4a8 8 0 00-6.895 12.06l.569.918-.597 2.653 2.816-.575.986.536A7.996 7.996 0 0012 20a8 8 0 100-16zm0-2c2.67 0 5.182 1.04 7.07 2.93C20.96 6.817 22 9.33 22 12s-1.04 5.183-2.93 7.071C17.182 20.96 14.67 22 12 22c-1.857 0-3.636-.502-5.186-1.378l-5.069 1.035 1.077-4.888A9.97 9.97 0 012 12C2 6.477 6.477 2 12 2z" clip-rule="evenodd"/>
+                     <path d="M16.89 15.013c-.267-.133-1.583-.78-1.828-.87-.245-.088-.423-.133-.6.134-.179.266-.69 0.868-.846 1.047-.155.178-.31.2-.577.066-.267-.133-1.127-.415-2.147-1.324-.795-.71-1.332-1.586-1.488-1.854-.156-.266-.017-.41.117-.543.122-.122.267-.311.4-.467.134-.155.178-.266.267-.444.089-.178.045-.333-.022-.467-.067-.133-.6-1.446-.822-1.98-.216-.522-.437-.45-.6-.458-.156-.009-.334-.009-.512-.009-.178 0-.467.067-.711.334-.245.266-.934.912-.934 2.224 0 1.312.956 2.58 1.09 2.758.133.177 1.88 2.87 4.555 4.024 1.77.765 2.45.765 3.32.716.953-.053 1.583-.646 1.805-1.268.223-.623.223-1.157.156-1.268-.067-.111-.245-.178-.512-.311z"/>
+                     </svg>
+                      </div>
+                       <div class="flex flex-col">
+                        <span class="text-white font-bold text-lg leading-tight">WhatsApp</span>
+                     <span class="text-neutral-500 text-sm">Chat on WhatsApp</span>
+                       </div>
+                     </a>
+
+
+                            <a href="https://t.me/JUSTTHEEPRO" class="group flex items-center p-4 rounded-2xl border border-neutral-800 bg-black hover:bg-neutral-900 transition-all duration-200">
+                        <div class="flex-shrink-0 w-12 h-12 bg-[#229ED9] rounded-full flex items-center justify-center text-white mr-4">
+                     <svg class="w-6 h-6 ml-[-2px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                     </svg>
+                       </div>
+                     <div class="flex flex-col">
+                      <span class="text-white font-bold text-lg leading-tight">Telegram</span>
+                      <span class="text-neutral-500 text-sm">@JUSTTHEEPRO</span>
+                     </div>
+                     </a>
+                 </div>
+                </div>
+
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-sm font-bold text-green-400">Available for new projects</span>
+                </div>
+
+            </div>
+
+         <div class="bg-[#0a0a0a] p-8 rounded-2xl border border-white/10">
+    <form action="https://formspree.io/f/xdkwnlzz" method="POST" class="space-y-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+                <label class="text-sm text-gray-500 uppercase font-bold">Name</label>
+                <input type="text" name="name" placeholder="John Doe" required class="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/50 transition-colors">
+            </div>
+            <div class="space-y-2">
+                <label class="text-sm text-gray-500 uppercase font-bold">Email</label>
+                <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/50 transition-colors">
+            </div>
+        </div>
+
+        <div class="space-y-2">
+            <label class="text-sm text-gray-500 uppercase font-bold">I'm interested in...</label>
+            <select name="interest" class="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/50 transition-colors cursor-pointer">
+                <option>Web Design & Development</option>
+                <option>Brand Identity & Graphics</option>
+                <option>Web3 / Dapp Development</option>
+                <option>Trading Collaboration</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="space-y-2">
+            <label class="text-sm text-gray-500 uppercase font-bold">Message</label>
+            <textarea name="message" rows="4" placeholder="Tell me about your project..." required class="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/50 transition-colors"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-lg hover:bg-gray-200 transition-colors uppercase tracking-wide">
+            Send Message
+        </button>
+
+    </form>
+</div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="mt-auto py-8 text-center border-t border-white/10 text-gray-500 text-sm">
+        &copy; 2025 JUSTTHEEPRO. All rights reserved.
+    </footer>
+
+   <button 
+    id="scrollTopBtn" 
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-8 right-8 z-50 hidden bg-white text-black p-4 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300 hover:-translate-y-1"
+    aria-label="Scroll to top"
+>
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>
